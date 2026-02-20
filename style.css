@@ -6,9 +6,15 @@
   text-decoration: none;
 }
 
+.hero-section{
+  position: relative;
+  height: 120vh; /* controla duração da hero */
+  /*overflow: hidden;*/
+}
+
 .container-menu,
 .container-header {
-  background-color: #256782;
+  background-color: #2F6673;
 }
 
 .container-menu {
@@ -19,7 +25,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  z-index: 4;
+  z-index: 3;
 }
 
 .container-menu h1 {
@@ -37,8 +43,8 @@
   color: #fff;
 }
 
-.img {
-  position: absolute;
+.img{
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
@@ -112,4 +118,149 @@
 .hero-form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+.colecao h2 {
+  padding: 80px 40px;
+}
+
+.modelos {
+  display: flex;
+  flex-wrap: wrap;          /* permite quebrar linha */
+  gap: 40px;                /* espaçamento real */
+  justify-content: center;  /* centraliza */
+}
+
+.model {
+  position: relative;
+  width: 370px;
+  margin-bottom: 40px;
+}
+
+.model img {
+  width: 100%;
+  display: block;
+}
+
+.description{
+  position: absolute;
+  margin: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+
+  padding: 18px;
+  font-size: 16px;
+  letter-spacing: .5px;
+
+  backdrop-filter: blur(2px); /* opcional luxo */
+}
+
+.model:hover .description{
+  background: rgba(0,0,0,0.8);
+  transition: .3s;
+}
+
+.direcao {
+  margin: 120px auto auto auto;
+  background-color: #2F6673;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-helena {
+  max-width: 600px;
+}
+
+.p {
+  color: #fff;
+  max-width: 500px;
+  font-size: 24px;
+}
+
+.p h1 {
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+}
+
+.p p {
+  margin-bottom: 16px;
+}
+
+.container-form {
+  background-color: #e8d8c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 120px 80px;
+}
+
+.container-form h2 {
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 260px;
+  line-height: 1.2;
+}
+
+.container-form div {
+  background-color: #f1f1f1;
+  padding: 50px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  width: 520px; /* maior que o da hero */
+}
+
+
+.formulario {
+  width: 100%;
+}
+
+
+.label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.formulario input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e5a701;
+  padding: 8px 0;
+  margin-top: 6px;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.formulario button {
+  display: block;
+  margin: 40px auto 0 auto; 
+  padding: 14px 40px;
+  background-color: #e5a701;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #2F6673;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
