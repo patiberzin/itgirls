@@ -1,85 +1,58 @@
+[12:58, 21/02/2026] Pati Berzin:
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Girls</title>
+  <title>IT Girls - Outono 2026</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="hero-section">
+  <!-- BLOCO AZUL -->
+  <div class="hero-wrapper">
 
-    <menu class="container-menu">
-      <h1>IT Girls</h1>
-      <nav class="menu-nav">
-        <a href="#">coleção outono 2026</a>
-        <a href="#">direção criativa</a>
-      </nav>
-      <div class="img">
-        <img src="modelo.png" alt="modelo" width="515" height="680">
+    <nav class="nav">
+      <div class="logo">IT Girls</div>
+      <ul class="menu">
+        <li><a href="#">coleção outono 2026</a></li>
+        <li><a href="#">direção criativa</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>
+          Entre luz e sombra, a coleção
+          de outono chega com peças
+          marcantes, confortáveis e
+          prontas para a nova estação.
+        </h1>
       </div>
-    </menu>
-
-    <header class="container-header">
-      <p>
-        Entre luz e sombra, a coleção de outono
-        chega com peças marcantes,
-        confortáveis e prontas para a nova estação.
-      </p>
-    </header>
-
-    <div class="hero-form">
-      <p class="form-title">
-        Preencha o cadastro<br>
-        para a pré-venda
-      </p>
-
-      <form>
-        <label class="label">
-          nome:
-          <input type="text" name="nome">
-        </label>
-
-        <label class="label">
-          e-mail:
-          <input type="email" name="email">
-        </label>
-
-        <label class="label">
-          whatsapp:
-          <input type="text" name="whatsapp">
-        </label>
-
-        <button type="submit">avise-me primeiro</button>
-      </form>
-    </div>
-
-    <script>
-      const form = document.querySelector(".hero-form");
-      const img = document.querySelector(".img");
-      const hero = document.querySelector(".hero-section");
-
-      window.addEventListener("scroll", () => {
-        const heroBottom = hero.offsetTop + hero.offsetHeight;
-        const scroll = window.scrollY + window.innerHeight / 2;
-
-        if (scroll > heroBottom) {
-          form.style.display = "none";
-          img.style.display = "none";
-        } else {
-          form.style.display = "block";
-          img.style.display = "block";
-        }
-      });
-    </script>
-
-
+    </section>
 
   </div>
 
+  <!-- IMAGEM -->
+  <img src="modelo.png" class="hero-image" alt="Modelo" width="515" height="680">
+
+  <!-- FORMULÁRIO -->
+  <div class="form-hero">
+    <p class="form-title">Preencha o cadastro<br>para a pré-venda</p>
+
+    <label>nome:</label>
+    <input type="text">
+
+    <label>e-mail:</label>
+    <input type="email">
+
+    <label>whatsapp:</label>
+    <input type="text">
+
+    <button>avise-me primeiro</button>
+  </div>
 
   <section class="colecao">
     <h2>Coleção Outono 2026</h2>
