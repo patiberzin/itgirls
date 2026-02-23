@@ -15,8 +15,10 @@
 
 <body>
 
+
   <!-- BLOCO AZUL -->
   <div class="hero-wrapper">
+
 
     <nav class="nav">
       <div class="logo">IT Girls</div>
@@ -25,6 +27,7 @@
         <li><a href="#">direção criativa</a></li>
       </ul>
     </nav>
+
 
     <section class="hero">
       <div class="hero-left">
@@ -37,66 +40,84 @@
       </div>
     </section>
 
+
   </div>
+
 
   <!-- IMAGEM -->
   <img src="modelo.png" class="hero-image" alt="Modelo" width="515" height="680">
+
 
   <!-- FORMULÁRIO -->
   <div class="form-hero">
     <p class="form-title">Preencha o cadastro<br>para a pré-venda</p>
 
+
     <label>nome:</label>
     <input type="text">
+
 
     <label>e-mail:</label>
     <input type="email">
 
+
     <label>whatsapp:</label>
     <input type="text">
+
 
     <button>avise-me primeiro</button>
   </div>
 
+
   <section class="colecao">
     <h2>Coleção Outono 2026</h2>
 
+
     <div class="modelos">
+
 
       <div class="model">
         <img src="modelo-alfaiataria.png" alt="">
         <a href="" class="description">Alfaiataria Contemporânea</a>
       </div>
 
+
       <div class="model">
         <img src="modelo-essencial.png" alt="">
         <a href="" class="description">Sofisticação Essencial</a>
       </div>
+
 
       <div class="model">
         <img src="modelo-natural.png" alt="">
         <a href="" class="description">Neutros Naturais</a>
       </div>
 
+
       <div class="model">
         <img src="modelo-noir.png" alt="">
         <a href="" class="description">Noir Moderno</a>
       </div>
+
 
       <div class="model">
         <img src="modelo-classico.png" alt="">
         <a href="" class="description">Clássico Atemporal</a>
       </div>
 
+
       <div class="model">
         <img src="modelo-borgonha.png" alt="">
         <a href="" class="description">Borgonha Intenso</a>
       </div>
 
+
     </div>
   </section>
 
+
   <section class="direcao">
+
 
     <div class="img-helena">
       <h2>Direção Criativa</h2>
@@ -104,16 +125,22 @@
     </div>
 
 
+
+
     <div class="p">
       <h1>Helena Duarte</h1>
 
+
       <p>À frente da direção criativa da IT Girls, Helena Duarte é reconhecida por construir coleções que exploram contraste e equilíbrio — entre luz e sombra, estrutura e fluidez.</p>
 
+
       <p>Seu trabalho é marcado por silhuetas precisas, paletas sofisticadas e uma estética que valoriza o jogo de profundidade e movimento.</p>
+
 
       <p>Na coleção Outono 2026, Helena traduz essa dualidade em peças que transitam entre presença e leveza. Tons intensos encontram bases neutras, cortes estruturados dialogam com tecidos fluidos — criando uma narrativa visual que reflete a mulher IT Girls: segura, versátil e marcante.</p>
     </div>
   </section>
+
 
   <section class="container-form">
     <h2>Inscreva-se para ser avisada</h2>
@@ -124,6 +151,7 @@
           <input type="text" name="nome">
         </label>
 
+
         <label class="label">
           e-mail:
           <input type="email" name="email">
@@ -133,14 +161,36 @@
     </div>
   </section>
 
-  <section>
+  <div>
 
-  </section>
+  </div>
+
 
   <footer class="footer">
     <p>Landing Page desenvolvida por Pati Berzin - 2026</p>
     <p>Alguns direitos reservados</p>
   </footer>
+
+
+  <!-- MODAL CARROSSEL -->
+  <div class="modal" id="modal">
+    <span class="close">&times;</span>
+
+
+    <div class="modal-content">
+      <button class="prev">&#10094;</button>
+
+
+      <img id="modal-image" src="" alt="Coleção">
+
+
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
 
 </body>
 
