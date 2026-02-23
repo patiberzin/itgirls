@@ -270,3 +270,24 @@
     display: flex;
     justify-content: space-between;
   }
+
+  /*RESPONSIVO*/
+
+  @media (max-width: 90rem) { /* 1440px */
+
+  /* leve ajuste tipográfico para evitar invasão */
+  .hero-left h1 {
+    font-size: 34px;
+  }
+
+  /* suaviza expansão da imagem */
+  .hero-image {
+    width: 42%;
+  }
+
+  /* pequeno ajuste de posicionamento do formulário */
+  .form-hero {
+    left: 57%;
+  }
+
+}
