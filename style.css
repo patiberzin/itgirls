@@ -444,15 +444,73 @@
     width: 90%;
   }
 
+  /* ===== GRID MODELOS ===== */
+
   .modelos {
     grid-template-columns: 1fr;
   }
+
+  .model {
+    margin: 25px auto;
+    max-width: 320px; /* controla tamanho no tablet/cel grande */
+  }
+
+  .model img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4; /* mantém proporção 370x480 */
+    object-fit: cover;
+  }
+
+  .description {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  /* ===== MODAL ===== */
+
+  .modal-content {
+    width: 95%;
+    height: 85%;
+  }
+
+  .modal-content img {
+    max-height: 85vh;
+    width: auto;
+  }
+
+  .prev,
+  .next {
+    font-size: 32px;
+  }
+
+  .close {
+    font-size: 34px;
+    top: 20px;
+    right: 25px;
+  }
+
+  /* DIREÇÃO */
 
   .direcao {
     flex-direction: column;
     padding: 40px 20px;
     gap: 30px;
   }
+
+  .img-helena {
+  width: 100%;
+  max-width: 320px;   /* controla o tamanho no mobile */
+  margin: 0 auto;     /* centraliza */
+  text-align: center;
+}
+
+.img-helena img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 434 / 482; /* mantém proporção original */
+  object-fit: cover;
+}
 
   .p p {
     font-size: 20px;
@@ -462,20 +520,81 @@
 
 @media (max-width: 30rem) { /* 480px */
 
+  /* HERO */
   .hero-image {
     display: none;
   }
 
+  /* GRID MODELOS */
   .modelos {
     grid-template-columns: 1fr;
   }
 
+  .model {
+    margin: 20px auto;
+    max-width: 260px; /* ligeiramente menor para caber melhor */
+  }
+
+  .model img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4; /* mantém proporção 370x480 */
+    object-fit: cover;
+  }
+
+  .description {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  /* MODAL MOBILE */
+  .modal-content {
+    width: 95%;
+    height: 75%;
+  }
+
+  .modal-content img {
+    max-height: 80vh;
+    width: auto;
+  }
+
+  .prev,
+  .next {
+    font-size: 28px;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* DIREÇÃO */
   .direcao {
     flex-direction: column;
     padding: 40px 20px;
     gap: 30px;
   }
 
+  .img-helena {
+  width: 100%;
+  max-width: 320px;   /* controla o tamanho no mobile */
+  margin: 0 auto;     /* centraliza */
+  text-align: center;
+}
+
+.img-helena img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 434 / 482; /* mantém proporção original */
+  object-fit: cover;
+}
+
+  .p p {
+    font-size: 18px; /* levemente menor para mobile pequeno */
+  }
+
+  /* FORM FINAL */
   .container-form {
     flex-direction: column;
     gap: 40px;
@@ -487,10 +606,7 @@
     padding: 40px 20px;
   }
 
-  .p p {
-    font-size: 20px;
-  }
-
+  /* FOOTER */
   .footer {
     flex-direction: column;
     gap: 10px;
