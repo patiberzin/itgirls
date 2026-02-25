@@ -8,6 +8,10 @@
   body {
     background: #FFFBF5;
   }
+
+  html {
+  scroll-behavior: smooth;
+  }
   
   /* BLOCO AZUL */
   .hero-wrapper {
